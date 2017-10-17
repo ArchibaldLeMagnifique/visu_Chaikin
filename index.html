@@ -15,8 +15,15 @@
     </style>
     <meta charset="UTF-8">
     <title>Multirésolution de Chaikin</title>
+
+    <script type="text/javascript" src="canvasJS/canvasjs.min.js"></script>
+
+
+
 </head>
 <body>
+
+<h1>TP multirésolution de Chaikin</h1>
 
 <input type="file" id="file-input" />
 <pre id="file-content"></pre>
@@ -30,7 +37,22 @@
         Your browser does not support the HTML5 canvas tag.</canvas></li>
 </ul>
 
+<h3>Courbe de l'erreur moyenne en fonction du seuil:</h3>
+<div id="chartContainer" style="height: 700px; width: 1224px;"></div>
 <script src="script.js"></script>
+
+<h3>Deplacons quelques sommets et observons l’influence de la modification sur la reconstruction:</h3>
+frequence :
+<input title="de 0 à 100" id="freq" value="5" style="width: 50px;" oninput="refresh()">
+% | effet :
+<input title="à partir de 0" id="effet" value="1" style="width: 50px;" oninput="refresh()">
+
+<ul>
+    <li><canvas id="firstCanvas2" width="600" height="500" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas></li>
+    <li><canvas id="secondCanvas2" width="600" height="500" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas></li>
+</ul>
 
 </body>
 </html>
