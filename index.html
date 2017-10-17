@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+            padding: 5px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Multirésolution de Chaikin</title>
+</head>
+<body>
+
+<input type="file" id="file-input" />
+<pre id="file-content"></pre>
+
+<p>Avant/Après multirésolution en supprimant les détails inférieurs à <input title="seuil" id="seuil" value="1" style="width: 50px;" oninput="refresh()"></p>
+
+<ul>
+    <li><canvas id="firstCanvas" width="600" height="500" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas></li>
+    <li><canvas id="secondCanvas" width="600" height="500" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas></li>
+</ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
